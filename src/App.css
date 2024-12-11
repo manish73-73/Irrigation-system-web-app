@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f6f9fc;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Table Header */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.table-header .filters {
+  display: flex;
+  gap: 10px;
+}
+
+.table-header select,
+.table-header input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.table-header select:hover,
+.table-header input:hover {
+  border-color: #4facfe;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+table thead {
+  background: #f7f9fc;
+  color: #555;
+}
+
+table thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+table tbody tr {
+  transition: all 0.3s ease;
+}
+
+table tbody tr:hover {
+  background: #f4faff;
+}
+
+table tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+table tbody td.status {
+  text-align: center;
+}
+
+table tbody .status span {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+}
+
+table tbody .status .in-work {
+  background: #4caf50;
+}
+
+table tbody .status .pending {
+  background: #ff9800;
+}
+
+table tbody .status .on-vacation {
+  background: #f44336;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  background: #4facfe;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #00c6ff;
+}
+
+.pagination .active {
+  background: #0066ff;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4facfe;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.fab:hover {
+  background: #00c6ff;
+}
+
+.fab i {
+  font-size: 20px;
+}
