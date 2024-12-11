@@ -35,3 +35,17 @@ Start the development server:
 
 2. Build the project
    npm run build
+
+
+snapshots:
+ # Project Snapshots
+
+Here are some snapshots of the project:
+
+## Snapshot 1
+![Snapshot 1](public/snapshots/snapshot1.png)
+
+## Snapshot 2
+![Snapshot 2](public/snapshots/snapshot2.png)
+
+ 
