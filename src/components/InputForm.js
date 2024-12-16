@@ -24,54 +24,12 @@ const InputForm = ({ generateSchedule }) => {
     <div className="form-wrapper">
       <h2>Configure Irrigation System</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="number"
-          name="numberOfPlots"
-          placeholder="Number of Plots"
-          value={formData.numberOfPlots}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="motorsInParallel"
-          placeholder="Motors in Parallel"
-          value={formData.motorsInParallel}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="startTime"
-          placeholder="Start Time (HHMMSS)"
-          value={formData.startTime}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="endTime"
-          placeholder="End Time (HHMMSS)"
-          value={formData.endTime}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="motorRuntime"
-          placeholder="Motor Runtime (Minutes)"
-          value={formData.motorRuntime}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="cycleInterval"
-          placeholder="Cycle Interval (Minutes)"
-          value={formData.cycleInterval}
-          onChange={handleChange}
-          required
-        />
+        <input type="number" name="numberOfPlots" placeholder="Number of Plots" onChange={handleChange} required />
+        <input type="number" name="motorsInParallel" placeholder="Motors in Parallel" onChange={handleChange} required />
+        <input type="text" name="startTime" placeholder="Start Time (HHMMSS)" onChange={handleChange} required />
+        <input type="text" name="endTime" placeholder="End Time (HHMMSS)" onChange={handleChange} required />
+        <input type="number" name="motorRuntime" placeholder="Motor Runtime (Minutes)" onChange={handleChange} required />
+        <input type="number" name="cycleInterval" placeholder="Cycle Interval (Minutes)" onChange={handleChange} required />
         <button type="submit">Generate Schedule</button>
       </form>
     </div>
